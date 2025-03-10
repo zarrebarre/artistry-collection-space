@@ -9,11 +9,12 @@ import { Toaster } from 'sonner';
 
 const Index = () => {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="box-border px-10 py-9 m-0 min-h-screen bg-zinc-100 max-sm:px-5 max-sm:py-6">
       <Toaster position="top-right" />
       <Navbar />
       <main>
         <Hero />
+        <div className="inline-block overflow-hidden mb-24 text-6xl font-bold text-blue-700 uppercase whitespace-nowrap animate-marquee"></div>
         <Projects />
         <About />
         <Contact />
