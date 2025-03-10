@@ -39,54 +39,16 @@
   }
 
   body, html {
-    @apply bg-background text-foreground antialiased;
-    font-feature-settings: "cv11", "salt", "ss01", "ss03", "cv01", "cv02", "cv03", "cv04", "cv05", "cv06", "cv09", "cv10";
+    @apply bg-gray-100 text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
   }
 
   ::selection {
-    @apply bg-black/10;
+    @apply bg-blue-600/10;
   }
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-html {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-.scroll-smooth {
-  scroll-behavior: smooth;
-}
-
-.section-transition {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.9s ease-out;
-}
-
-.section-transition.appear {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.gradient-text {
-  @apply bg-clip-text bg-gradient-to-r from-neutral-700 to-neutral-500 text-transparent;
-}
-
-.project-card {
-  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
-}
-
-.skill-card:hover {
-  transform: translateY(-3px);
 }
